@@ -1,0 +1,32 @@
+<!-- html.index -->
+<!-- Parent html for all the project -->
+<!DOCTYPE html>
+<html ng-app="Application">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!-- Similar overall content for all the pages -->
+<body>
+<h1>Bohol Vintage Houses</h1>
+<div class="main-wrapper">
+    <div ng-view></div> <!-- Render the template of the current route -->
+</div>
+
+<!-- Load javascript libs -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+
+<!-- Load local javascipt files -->
+<script type="text/javascript" src="javascript/app.js"></script>
+<script type="text/javascript" src="javascript/routes.js"></script>
+
+<!-- Controllers -->
+<script type="text/javascript" src="javascript/controllers/houses-index-controller.js"></script>
+<script type="text/javascript" src="javascript/controllers/houses-show-controller.js"></script>
+
+</body>
+
+</html>
